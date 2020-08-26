@@ -5,3 +5,18 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+
+
+10.times do 
+    Article.create(
+        title: Faker::Books::Lovecraft.word,
+        description: Faker::Books::Lovecraft.sentence
+    )
+end
+
+
+
+    # create_table "articles", force: :cascade do |t|
+    #     t.string   "title"
+    #     t.text     "description"
